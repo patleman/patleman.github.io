@@ -19,14 +19,14 @@ Work experience
 ### Experience
 
 
-#### <h4 style="font-size: 1.25em;">Gen Auto AI, Research Intern | New York, USA</h4>
+####<h4 style="font-size: 1.25em;">Gen Auto AI, Research Intern | New York, USA</h4>
 *September 2024 - present*
 - Developing Control laws for Autonomous Vehicles
 
 ---
 
 
-#### <h4 style="font-size: 1.25em;">New York University, Researcher | New York, USA</h4>
+####<h4 style="font-size: 1.25em;">New York University, Researcher | New York, USA</h4>
 
 *Aug 2024 - September 2024*
 - Working on safe obstacle avoidance algorithms for robotic manipulators such as the UR16e and [Franka Research 3.](https://youtu.be/2OeWnk6FiRwFranka)
@@ -34,14 +34,14 @@ Work experience
 ---
 
 
-#### <h4 style="font-size: 1.25em;">Omnipresent Robot Tech, India, Robotics Software Engineer | India</h4>
+####<h4 style="font-size: 1.25em;">Omnipresent Robot Tech, India, Robotics Software Engineer | India</h4>
 *Sept 2020 - Sept 2021*
 - Improved the security, traceability, and integrity of the company's Remotely Piloted Aircraft Systems (RPAS) by augmenting the open-source software **PX4** with **Public Key Infrastructure (PKI)** to meet Indian regulatory requirements.
 - The aforementioned augmentation was directly applied to the PX4 source code (Pixhawk), which had previously been implemented on a Raspberry Pi (companion computer), thereby **increasing the flight time** and **reducing the power consumption** of the company's RPAS.
 - Developed and documented the company's [**NPNT (No Permission, No Take-off)**](https://github.com/patleman/Px4_firmware/blob/master/NPNT_work.pdf) architecture to ensure compliance with Indian regulations.
 
 ---
-#### <h4 style="font-size: 1.25em;">Industrial Automation Lab (MPAE Department, NSIT), R&D Intern | New Delhi, India</h4>
+####<h4 style="font-size: 1.25em;">Industrial Automation Lab (MPAE Department, NSIT), R&D Intern | New Delhi, India</h4>
 *Jun 2019 - Sept 2019*
 - Worked on a project titled, **"Quaternion based estimation and disturbance observer-based control of attitude for a quadrotor"** in the requirement of the Internship.
 - Simulated **disturbance-rejection-based PID** attitude control on a quadrotor using **MATLAB**.
