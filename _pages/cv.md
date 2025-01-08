@@ -37,7 +37,7 @@ Work experience
 - Developed and documented the company's [**NPNT (No Permission, No Take-off)**](https://github.com/patleman/Px4_firmware/blob/master/NPNT_work.pdf) architecture to ensure compliance with Indian regulations.
 
 ---
-<h4 style="font-size: 1.25em;">Industrial Automation Lab (MPAE Department, NSIT), *R&D Intern* | New Delhi, India</h4>
+#### <h4 style="font-size: 1.25em;">Industrial Automation Lab (MPAE Department, NSIT), *R&D Intern* | New Delhi, India</h4>
 *Jun 2019 - Sept 2019*
 - Worked on a project titled, **"Quaternion based estimation and disturbance observer-based control of attitude for a quadrotor"** in the requirement of the Internship.
 - Simulated **disturbance-rejection-based PID** attitude control on a quadrotor using **MATLAB**.
