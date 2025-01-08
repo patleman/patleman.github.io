@@ -9,5 +9,3 @@ redirect_from:
 
 
 
-Patanjali's personal website
-======
