@@ -21,7 +21,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "li.jpeg"
+  avatar           : "imagees/li.jpeg"
   name             : "Patanjali Maithani"
   pronouns         : # example: "she/her"  
   bio              : "Research Intern"
