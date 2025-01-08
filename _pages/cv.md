@@ -16,10 +16,8 @@ Education
 
 Work experience
 ======
-### Experience
 
-
-####<h4 style="font-size: 1.25em;">Gen Auto AI, Research Intern | New York, USA</h4>
+#### <h4 style="font-size: 1.25em;">Gen Auto AI, Research Intern | New York, USA</h4>
 *September 2024 - present*
 - Developing Control laws for Autonomous Vehicles
 
