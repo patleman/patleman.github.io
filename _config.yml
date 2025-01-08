@@ -10,7 +10,7 @@
 locale                   : "en-US"
 title                    : "Patanjali Maithani / Profile"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Patanjali"
 description              : &description "personal description"
 url                      : https://patleman.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -21,7 +21,7 @@ repository               : "patleman/patleman.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/site-logo.png"
+  avatar           : "li.jpeg"
   name             : "Patanjali Maithani"
   pronouns         : # example: "she/her"  
   bio              : "Research Intern"
