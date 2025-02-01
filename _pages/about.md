@@ -16,6 +16,5 @@ In addition to my work in control laws, I have hands-on experience implementing 
 
 During my master's coursework, subjects like Robot Localization and Navigation, and Perception have equipped me with a solid foundation in algorithms for localization and mapping, enabling me to apply these concepts in real-world robotic systems.
 
-What excites me most is the opportunity to work on real-life robotic systems, where I can bring the theoretical aspects of optimization, control, and computer vision to life. By leveraging established frameworks, an algorithmic mindset, and strong coding skills, I am motivated to make a tangible impact in the field of robotics.
-
+I am particularly excited by the opportunity to work with real-world robotic systems, where I can apply theoretical concepts in optimization, control, and computer vision. By leveraging established frameworks, an analytical mindset, and advanced coding skills, I am driven to make a meaningful contribution to the field of robotics.
 
