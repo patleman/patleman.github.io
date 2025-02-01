@@ -12,7 +12,8 @@ redirect_from:
 Education
 ======
 * M.S. Mechatronics and Robotics, New York University, (2022-2024)
-* B.E  Netaji Subhas Institute of Technology, Delhi University, India, (2016-2020)
+* B.E. Manufacturing Process and Automation Engineeirng,
+  Netaji Subhas Institute of Technology, University Of Delhi, India, (2016-2020)
 
 Work experience
 ======
