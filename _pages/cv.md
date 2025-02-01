@@ -19,7 +19,7 @@ Work experience
 
 ### Gen Auto AI, Research Intern | New York, USA
 *September 2024 - present*
-- Developing Control laws for Autonomous Vehicles
+- Developing safety-critical control laws.
 
 ---
 
@@ -27,7 +27,7 @@ Work experience
 ### New York University, Researcher | New York, USA
 
 *Aug 2024 - September 2024*
-- Working on safe obstacle avoidance algorithms for robotic manipulators such as the UR16e and [Franka Research 3.](https://youtu.be/2OeWnk6FiRwFranka)
+- Working on safe obstacle avoidance algorithms for robotic manipulators such as the [UR16e]((https://youtu.be/2OeWnk6FiRwFranka)) and [Franka Research 3.](https://youtu.be/2OeWnk6FiRwFranka)
 
 ---
 
