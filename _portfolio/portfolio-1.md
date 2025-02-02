@@ -4,18 +4,36 @@ excerpt: " This project introduces a hierarchical Control Barrier Function (CBF)
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
 
-
+The overview of the developed algorithm is shown in the diagram below: 
 <img src='/images/CBFcontroller (1).png'>
 
+The equations used in the algorithm is shown in the diagram below:
 <img src='/images/equation_controller_po.drawio.png'>
 
-<img src='/images/v_vs_d.svg'>
+
+
+A simulation was performed for a 2D manipulator to
+highlight the effect of the relaxation variable. The first diagram
+shows the initial configuration of the manipulator and two obstacles.
+The second diagram corresponds to the case where no relaxation
+variable is used. The third figure corresponds to the case where the
+red obstacle is prioritized more than the green obstacle. The fourth
+diagram represents the plot of the relaxation variable value for the
+previous case, capped at 0.6. The fifth diagram corresponds to the
+case where the upper bound on the relaxation variable is kept high.
 
 <img src='/images/highlighting_prioritization (2) (1).png'>
 
+Plots of the relative velocity of the head and hand versus
+their distance from the end-effector, based on data from 40 runs of
+the experiment. A larger gap in the bottom-left corner of the head
+plot, compared to the hand plot, indicates the prioritization of the head over hand. 
 
+<img src='/images/v_vs_d.svg'>
+
+
+Below video represents the implementation of the algorithm
 <!-- Embed local video -->
 <video width="640" height="360" controls>
   <source src="/images/CBF_implementation.mp4" type="video/mp4">
