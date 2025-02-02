@@ -33,7 +33,7 @@ plot, compared to the hand plot, indicates the prioritization of the head over h
 <img src='/images/v_vs_d.svg'>
 
 
-Below video represents the implementation of the algorithm
+Video below represents the implementation of the algorithm
 <!-- Embed local video -->
 <video width="640" height="360" controls>
   <source src="/images/CBF_implementation.mp4" type="video/mp4">
