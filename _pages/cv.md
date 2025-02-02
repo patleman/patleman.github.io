@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* M.S. Mechatronics and Robotics, New York University, (2022-2024) | Grade: 3.8
+* M.S. Mechatronics and Robotics, New York University, (2022-2024)  Grade: 3.8
 * B.E. Manufacturing Process and Automation Engineeirng,
-  Netaji Subhas Institute of Technology, University Of Delhi, India, (2016-2020) | Grade: 7.85
+  Netaji Subhas Institute of Technology, University Of Delhi, India, (2016-2020)  Grade: 7.85
 
 Work experience
 ======
