@@ -7,7 +7,13 @@ collection: portfolio
 This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
 
 
-![Controller diagram for the proposed scheme(/images/cbf_diagram1_c1.jpg)
+![Controller diagram for the proposed scheme(/images/CBFcontroller(1).png)
+
+![Controller diagram for the proposed scheme(/images/equation_controller_po.drawio.png)
+
+![Controller diagram for the proposed scheme(/images/v_vs_d.svg)
+
+![Controller diagram for the proposed scheme(/images/highlighting_prioritization(2)(1).png)
 
 
 <!-- Embed local video -->
@@ -15,10 +21,8 @@ This is an item in your portfolio. It can be have images or nice text. If you na
   <source src="/images/CBF_implementation.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
 $$
-
-
-
 \begin{aligned}
 &\arg_{\delta_{ha} > 0} \min_{\dot{\boldsymbol{q}}_{safe}}\left\{||\dot{\boldsymbol{q}}_{safe}-\dot{\boldsymbol{q}}_{perf}||^2 + \beta  \delta_{ha}^2 \right\} \\
 &\text { s.t.} \\
