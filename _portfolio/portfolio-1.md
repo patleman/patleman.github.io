@@ -1,10 +1,10 @@
 ---
 title: "Control Barrier Function based Prioritized Obstacle Avoidance for Robotic Manipulator"
-excerpt: " This project introduces a hierarchical Control Barrier Function (CBF)-based control framework designed to proactively ensure the safe operation of an industrial manipulator in close human-robot interaction scenarios.<br/><img src='/images/cbf_diagram1_c1.jpg'>"
+excerpt: " This project introduces a hierarchical Control Barrier Function (CBF)-based control framework designed to proactively ensure the safe operation of an industrial manipulator in close human-robot interaction scenarios.<br/><img src='https://github.com/user-attachments/assets/9e04538a-1641-44db-8089-bf51d310f37a' alt='CBF Implementation GIF'>"
 collection: portfolio
 ---
 <img src='https://github.com/user-attachments/assets/9e04538a-1641-44db-8089-bf51d310f37a' alt='CBF Implementation GIF'>"
-
+<br/><img src='/images/cbf_diagram1_c1.jpg'>"
 
 The overview of the developed algorithm is shown in the diagram below: 
 <img src='/images/CBFcontroller (1).png'>
