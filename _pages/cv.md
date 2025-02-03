@@ -6,7 +6,7 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-[Download CV]('https://raw.github.com/patleman/patleman.github.io/files/Resume.pdf')
+[Download CV](https://raw.github.com/patleman/patleman.github.io/files/Resume.pdf)
 {% include base_path %}
 
 Education
