@@ -1,5 +1,5 @@
 ---
-title: "Control Barrier Function based Prioritized Obstacle Avoidance for Robotic Manipulator"
+title: "Augmenting Public Key Infrastructure(PKI) to PX4 source code and making it NPNT compliant( No Permission No Takeoff)"
 excerpt: " This project introduces a hierarchical Control Barrier Function (CBF)-based control framework designed to proactively ensure the safe operation of an industrial manipulator in close human-robot interaction scenarios.<br/><img src='/images/cbf_diagram1_c1.jpg'>"
 collection: portfolio
 ---
@@ -13,43 +13,23 @@ The equations used in the algorithm is shown in the diagram below:
 
 
 
-A simulation was performed for a 2D manipulator to
-highlight the effect of the relaxation variable. The first diagram
-shows the initial configuration of the manipulator and two obstacles.
-The second diagram corresponds to the case where no relaxation
-variable is used. The third figure corresponds to the case where the
-red obstacle is prioritized more than the green obstacle. The fourth
-diagram represents the plot of the relaxation variable value for the
-previous case, capped at 0.6. The fifth diagram corresponds to the
-case where the upper bound on the relaxation variable is kept high.
+1) Validation of Permission Artefact is tested
+2) Key Generation inside Pixhawk is tested
+3) Return To Launch behavior is activated upon geofence or time beach. (tested in simulation-in-hardware)
+4)Log is generated and signed within the Pixhawk(tested in simulation-in-hardware)
 
-<img src='/images/highlighting_prioritization (2) (1).png'>
+Problems faced in Software in the Loop:
+1) knowing and implementing the canonicalization and validation of permission artifacts (XML file). XML parser library was not able to be used because of linking issues.
+2) way of canonicalization and signing flight log (JSON file).
 
-Plots of the relative velocity of the head and hand versus
-their distance from the end-effector, based on data from 40 runs of
-the experiment. A larger gap in the bottom-left corner of the head
-plot, compared to the hand plot, indicates the prioritization of the head over hand. 
+Problems faced while implementing the code in hardware:
 
-<img src='/images/v_vs_d.svg'>
+1)Processes like permission artifact validation, flight log signing, and key generation involve computations like random prime number generation(1024 bit long in this case) and modular exponentiation. These computations use huge stack space. The inbuilt memory is around 256-kilobytes.  Most of which is already taken up by the already coded tasks in px4 firmware. Because of the just mentioned facts, when I earlier uploaded the code to the PIXHAWK, it didn't respond (because of full stack usage during computation).
+At the pre-boot time, most of the stack space is available as the other tasks are not running at that time. Therefore later,  all the heavy computation processes were compelled to run at the pre-boot time.
 
+2) For generating keys inside PIXHAWK, the generation of random numbers is required. Earlier, this was not able to be achieved. Later on, it was found that some device drivers (responsible for random number generation )were not registered in the initial configuration of the NUTTX-RTOS. The NUTTX RTOS was later on reconfigured with /dev/random and /dev/urandom (responsible for generating random numbers).
 
-Video below represents the implementation of the algorithm
-<!-- Embed local video -->
-<video width="640" height="360" controls>
-  <source src="/images/CBF_implementation.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-$$
-\begin{aligned}
-&\arg_{\delta_{ha} > 0} \min_{\dot{\boldsymbol{q}}_{safe}}\left\{||\dot{\boldsymbol{q}}_{safe}-\dot{\boldsymbol{q}}_{perf}||^2 + \beta  \delta_{ha}^2 \right\} \\
-&\text { s.t.} \\
-&A_{hej}(2J_{j}(\boldsymbol{x}) \ \dot{\boldsymbol{q}}_{safe}-\dot{\boldsymbol{p}}_{he})\geq - \alpha (h_{hej}(\boldsymbol{x},t)), \\
-&A_{haj}(2J_{j}(\boldsymbol{x}) \ \dot{\boldsymbol{q}}_{safe}-\dot{\boldsymbol{p}}_{ha})\geq - \alpha (h_{haj}(\boldsymbol{x},t))-\delta_{ha}, \\
-&\dot{\boldsymbol{q}}_{min} \leq \dot{\boldsymbol{q}}_{safe} \leq \dot{\boldsymbol{q}}_{max}, \\
-&\quad j = 1, 2, \dots, n
-\end{aligned}
-$$
+3)Earlier tested code in Software-in -the loop(SITL) used too much memory. Due to which the same code didn't run well in the simulation in hardware. Both the problem mentioned in point 1 and the huge size arrays defined were the source of this problem. The code architecture earlier coded for SITL was redefined for achieving the same behavior in simulation-in-hardware.
 
 
 
