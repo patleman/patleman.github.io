@@ -1,15 +1,12 @@
 ---
-title: "Control Barrier Function based Prioritized Obstacle Avoidance for Robotic Manipulator"
+title: "Implement a vision based 3-D pose estimator which estimates position and
+orientation of the quadrotor based on AprilTags"
 excerpt: " This project introduces a hierarchical Control Barrier Function (CBF)-based control framework designed to proactively ensure the safe operation of an industrial manipulator in close human-robot interaction scenarios.<br/><img src='/images/cbf_diagram1_c1.jpg'>"
 collection: portfolio
 ---
 
 
-The overview of the developed algorithm is shown in the diagram below: 
-<img src='/images/CBFcontroller (1).png'>
 
-The equations used in the algorithm is shown in the diagram below:
-<img src='/images/equation_controller_po.drawio.png'>
 
 
 
@@ -40,16 +37,7 @@ Video below represents the implementation of the algorithm
   Your browser does not support the video tag.
 </video>
 
-$$
-\begin{aligned}
-&\arg_{\delta_{ha} > 0} \min_{\dot{\boldsymbol{q}}_{safe}}\left\{||\dot{\boldsymbol{q}}_{safe}-\dot{\boldsymbol{q}}_{perf}||^2 + \beta  \delta_{ha}^2 \right\} \\
-&\text { s.t.} \\
-&A_{hej}(2J_{j}(\boldsymbol{x}) \ \dot{\boldsymbol{q}}_{safe}-\dot{\boldsymbol{p}}_{he})\geq - \alpha (h_{hej}(\boldsymbol{x},t)), \\
-&A_{haj}(2J_{j}(\boldsymbol{x}) \ \dot{\boldsymbol{q}}_{safe}-\dot{\boldsymbol{p}}_{ha})\geq - \alpha (h_{haj}(\boldsymbol{x},t))-\delta_{ha}, \\
-&\dot{\boldsymbol{q}}_{min} \leq \dot{\boldsymbol{q}}_{safe} \leq \dot{\boldsymbol{q}}_{max}, \\
-&\quad j = 1, 2, \dots, n
-\end{aligned}
-$$
+
 
 
 
