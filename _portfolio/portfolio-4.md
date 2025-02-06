@@ -1,15 +1,10 @@
 ---
 title: "Augmenting Public Key Infrastructure(PKI) to PX4 source code and making it NPNT compliant( No Permission No Takeoff)"
-excerpt: " This project introduces a hierarchical Control Barrier Function (CBF)-based control framework designed to proactively ensure the safe operation of an industrial manipulator in close human-robot interaction scenarios.<br/><img src='/images/cbf_diagram1_c1.jpg'>"
+excerpt: " This project introduces a hierarchical Control Barrier Function (CBF)-based control framework designed to proactively ensure the safe operation of an industrial manipulator in close human-robot interaction scenarios."
 collection: portfolio
 ---
 
 
-The overview of the developed algorithm is shown in the diagram below: 
-<img src='/images/CBFcontroller (1).png'>
-
-The equations used in the algorithm is shown in the diagram below:
-<img src='/images/equation_controller_po.drawio.png'>
 
 
 
