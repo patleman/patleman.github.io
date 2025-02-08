@@ -14,7 +14,7 @@ collection: portfolio
 ## Advantages of the Solution
 
 ## Method
-<img src='/images/MRP_Project_front.png' height='600' width='700'>
+<img src='/images/MRP_Project_front.png' height=auto width='700'>
 
 ## Results
 
