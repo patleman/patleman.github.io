@@ -27,7 +27,7 @@ Additionally, a **cobot** works alongside the robot, so functionality is require
 ## Advantages of the Solution
 
 1. **Reduced computation time** compared to collision-avoidance solutions implemented at the motion planning stage.
-2. **Lower computation time** when compared with other Nonlinear Model Predictive Control (NMPC)-based solutions. While NMPC ensures the robot's state moves toward a defined safe set, it does not guarantee that the robot will remain in it over time. In contrast, the CBF-based solution makes the safe set forward-invariant, meaning if the system is in the safe set at some instance \(t_0\), it will remain in the safe set for all future times \(t_k > t_0\).
+2. **Forward-invariant safe-set** when compared with other Nonlinear Model Predictive Control (NMPC)-based solutions. While NMPC ensures the robot's state moves toward a defined safe set, it does not guarantee that the robot will remain in it over time. In contrast, the CBF-based solution makes the safe set forward-invariant, meaning if the system is in the safe set at some instance \(t_0\), it will remain in the safe set for all future times \(t_k > t_0\).
 3. For complex scenarios where other NMPC-based optimization problems may fail to provide a solution, the CBF-based approach guarantees a solution by using a slack variable in the defined constraints.
 
                               
@@ -39,7 +39,7 @@ The overview of the developed algorithm is shown in the diagram below:
 The equations used in the algorithm is shown in the diagram below:
 <img src='/images/equation_controller_po.drawio.png'>
 
-
+## Result
 
 A simulation was performed for a 2D manipulator to
 highlight the effect of the relaxation variable. The first diagram
@@ -68,15 +68,5 @@ Video below represents the implementation of the algorithm
   Your browser does not support the video tag.
 </video>
 
-$$
-\begin{aligned}
-&\arg_{\delta_{ha} > 0} \min_{\dot{\boldsymbol{q}}_{safe}}\left\{||\dot{\boldsymbol{q}}_{safe}-\dot{\boldsymbol{q}}_{perf}||^2 + \beta  \delta_{ha}^2 \right\} \\
-&\text { s.t.} \\
-&A_{hej}(2J_{j}(\boldsymbol{x}) \ \dot{\boldsymbol{q}}_{safe}-\dot{\boldsymbol{p}}_{he})\geq - \alpha (h_{hej}(\boldsymbol{x},t)), \\
-&A_{haj}(2J_{j}(\boldsymbol{x}) \ \dot{\boldsymbol{q}}_{safe}-\dot{\boldsymbol{p}}_{ha})\geq - \alpha (h_{haj}(\boldsymbol{x},t))-\delta_{ha}, \\
-&\dot{\boldsymbol{q}}_{min} \leq \dot{\boldsymbol{q}}_{safe} \leq \dot{\boldsymbol{q}}_{max}, \\
-&\quad j = 1, 2, \dots, n
-\end{aligned}
-$$
 
 
