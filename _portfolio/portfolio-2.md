@@ -37,11 +37,11 @@ Outer Loop:
 Simulation window:
 <img src='/images/MRP_pic1.jpg'>
 
-More details on the equations used and methodology can be found here: 
+More details on the equations used and methodology can be found [here.](https://patleman.github.io/files/Resume.pdf)
 
 ## Results
 <img src='/images/Quadrotor_MRP.gif'>
-Code for the implementation can be found here:
+Code for the implementation can be found [here](https://github.com/patleman/Quadrotor_MRP)
 
 ## Tools Used
 - Matlab
