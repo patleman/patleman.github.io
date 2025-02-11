@@ -4,16 +4,20 @@ excerpt: " This project introduces a hierarchical Control Barrier Function (CBF)
 collection: portfolio
 ---
 ### Problem Statement
-In order to establish a secure and reliable business environment for drones in the country, a robust infrastructure must be built to ensure that drone activities are traceable, thereby preventing misuse of the technology. To address this critical need, the Government of India has issued policies and guidelines, which can be found in the [DGCA RPAS Guidance Manual](https://patleman.github.io/files/DGCA_RPAS_Guidance_Manual.pdf). These guidelines outline essential software-level features that a drone or RPAS (Remotely Piloted Aircraft System) must incorporate to ensure safety, security, and compliance.
+In order to establish a **secure and reliable** business environment for drones in the country, a **robust infrastructure** must be built to ensure that drone activities are **traceable**, thereby preventing misuse of the technology. To address this critical need, the Government of India has issued policies and guidelines, which can be found in the [DGCA RPAS Guidance Manual](https://patleman.github.io/files/DGCA_RPAS_Guidance_Manual.pdf). These guidelines outline essential software-level features that a drone or RPAS (Remotely Piloted Aircraft System) must incorporate to ensure safety, security, and compliance.
 
-In alignment with these regulations, the task is to implement the software APIs listed on page 51 of the [aforementioned document](https://patleman.github.io/files/DGCA_RPAS_Guidance_Manual.pdf), ensuring that drones meet the required standards for operation in the Indian airspace. The goal is to develop a system that adheres to these regulatory requirements and guarantees the traceability and security of drone operations for regulatory and safety purposes.
+<img src='/images/npnt_2.png'>
+
+In alignment with these regulations, the task is to implement the **software APIs** listed on page 51 of the [aforementioned document](https://patleman.github.io/files/DGCA_RPAS_Guidance_Manual.pdf), ensuring that drones meet the required standards for operation in the Indian airspace. The goal is to develop a system that adheres to these regulatory requirements and guarantees the traceability and security of drone operations for regulatory and safety purposes.
 
 
 ### Objective
 
-1) Validation of Permission Artefact is tested
-2) Key Generation inside Pixhawk is tested
-3) Return To Launch behavior is activated upon geofence or time beach. (tested in simulation-in-hardware)
+1) Understand the software architecture of PX4 source code and figure out the modules, methods that needs amendements to be compliant with the 
+ standards. (controller board used:[Pixhawk](https://docs.px4.io/main/en/flight_controller/pixhawk-2.html))
+2) Validation of Permission Artefact is tested
+3) Key Generation inside Pixhawk is tested
+4) Return To Launch behavior is activated upon geofence or time beach. (tested in simulation-in-hardware)
 4)Log is generated and signed within the Pixhawk(tested in simulation-in-hardware)
 ### Method 
 <img src='/images/chart_npnt.png'>
