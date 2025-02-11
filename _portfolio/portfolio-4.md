@@ -4,7 +4,7 @@ excerpt: " This project introduces a hierarchical Control Barrier Function (CBF)
 collection: portfolio
 ---
 ### Problem Statement
-To make business out of drones in a country, a secure infrastructure should be build in which drone's activity is traceble to prevent the misuse of the technology. To address this Government of India relesed policies ([Document](https://github.com/patleman/Px4_firmware/DGCA_RPAS_Guidance_Manual.pdf)) that listed some must-have software level features that a drone/RPAS should exhibit. 
+To make business out of drones in a country, a secure infrastructure should be build in which drone's activity is traceble to prevent the misuse of the technology. To address this Government of India relesed policies ([Document](https://github.com/patleman/Px4_firmware/blob/master/DGCA_RPAS_Guidance_Manual.pdf)) that listed some must-have software level features that a drone/RPAS should exhibit. 
 
 
 
