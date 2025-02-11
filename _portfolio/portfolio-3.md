@@ -59,15 +59,17 @@ S_i + \ddot{q_c} t_c \left( t - \frac{t_c}{2} \right) & \quad t_c \leq t \leq t_
 S_f - \frac{1}{2} \ddot{q_c} (t_f - t)^2 & \quad t_f - t_c \leq t \leq t_f
 \end{cases}
 $$
+
 where $$t_c = \frac{t_f}{2} - \frac{1}{2} \sqrt{\frac{t_f^2 \ddot{q_c} - 4(q_f - q_i)}{\ddot{q_c}}}$$, and $$\ddot{q_c}$$ must be greater than or equal to $$\frac{4(q_f - q_i)}{t_f^2}$$.
 
 Using above equations, trajectory in 3D space is generated.
 
-The dynamics of the SCARA manipulator are derived using the Lagrangian equation. At the end, the following equation is derived:
+2. The dynamics of the SCARA manipulator are derived using the [Lagrangian equation](https://github.com/patleman/SCARA_MANIPULATOR-dynamics)(Derivation of B and N matrices inside file name: SCARA_Dynamics_Derive.mlx). At the end, the following equation is derived:
 
 $$
 B(q)\ddot{q} + n(q,\dot{q}) = \tau
 $$
+
 where $$n(q,\dot{q}) = c(q,\dot{q})\dot{q} + F\dot{q} + g(q), B(q)$$ is the 4x4 matrix, and $$C(q)$$ is also a 4x4 matrix. The $$F_v$$ matrix corresponds to the viscous force matrix for the motors, and $$g(q)$$ represents the potential energy contribution towards the dynamic equation of the SCARA manipulator.
 
 The model-referenced control law for is defined as follows:
@@ -86,20 +88,25 @@ Here, $$K_d$$ and $$K_p$$ are positive definite diagonal matrices to ensure stab
 
 Input values for the desired joint positions, velocities, and accelerations are derived from the Second Order Inverse Kinematic Algorithm.
 
-The desired translational trajectory for this Second Order Inverse Kinematics is taken from the trajectory generated in part 1 of this report.
-
-
 3. Second Order Inverse Kinematics:
  <img src='/images/inverse_kinematics.jpeg'>
 4. Inverse Dynamic Controller:
  <img src='/images/control.jpeg'>
 
 ### Result
+3d trajectory generated with trapezoidal velocity profile:
 <img src='/images/3d_part1.jpg'>
-<img src='/images/Joint_position_part2.jpg'>
+X component:
 <img src='/images/X_trajectory.jpg'>
-<img src='/images/Y_trajectory.jpg'>
+Y component:
+<img src='/images/Y_Trajectory.jpg'>
+Z component:
 <img src='/images/Z_trajectory.jpg'>
+
+Generated joint trajectories:
+<img src='/images/Joint_position_part2.jpg'>
+
+Visualization:
 <img src='/images/scara_animation.gif'>
 
   
