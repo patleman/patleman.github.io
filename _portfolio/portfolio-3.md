@@ -96,6 +96,8 @@ collection: portfolio
    Visualization: 
    
    <img src='/images/scara_animation.gif'>
+
+   more detailed results: [Code](https://github.com/patleman/SCARA_MANIPULATOR-dynamics)
    
 ### Tools
 MATLAB
