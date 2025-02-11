@@ -3,13 +3,12 @@ title: "Trajectory Tracking Controller for SCARA Manipulator(MATLAB)"
 excerpt: "This project discusses the formulation of torque-based control for the SCARA manipulator, along with trapezoidal velocity profile-based trajectory generation.<br/><img src='/images/scara_animation.gif'>"
 collection: portfolio
 ---
-<img src='/images/Scara.jpg'>
-Image Source:https://howtorobot.com/expert-insight/industrial-robot-types-and-their-different-uses
+
 
 [Code](https://github.com/patleman/SCARA_MANIPULATOR-dynamics)
 
 ### Problem Statement:
-
+<img src='/images/scara_animation.gif'>
 1. **Trajectory Generation in Operational Space with Trapezoidal Velocity Profile**:  
    Generate a trajectory for a robotic arm in its operational space over 4 seconds with a trapezoidal velocity profile. The trajectory should pass through the following waypoints:  
    - **p0 = [0, -0.80, 0]** at **t0 = 0.0**  
@@ -93,23 +92,10 @@ Image Source:https://howtorobot.com/expert-insight/industrial-robot-types-and-th
  <img src='/images/control.jpeg'>
 
 ### Result
-   3d trajectory generated with trapezoidal velocity profile:
-   <img src='/images/3d_part1.jpg'>
-   
-   X component:   
-   <img src='/images/X_trajectory.jpg'>
-   
-   Y component:
-   <img src='/images/Y_Trajectory.jpg'>
-   
-   Z component:   
-   <img src='/images/Z_trajectory.jpg'>
-   
-   Generated joint trajectories: 
-   <img src='/images/Joint_position_part2.jpg'>
-   
    Visualization: 
+   
    <img src='/images/scara_animation.gif'>
+   
 ### Tools
 MATLAB
    
