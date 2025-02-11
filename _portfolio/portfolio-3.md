@@ -4,8 +4,8 @@ excerpt: "This project discusses the formulation of torque-based control for the
 collection: portfolio
 ---
 <img src='/images/Scara.jpg'>
-Image Source:(https://howtorobot.com/expert-insight/industrial-robot-types-and-their-different-uses)
-
+Image Source:https://howtorobot.com/expert-insight/industrial-robot-types-and-their-different-uses
+[Code](https://github.com/patleman/SCARA_MANIPULATOR-dynamics)
 ### Problem Statement:
 
 1. **Trajectory Generation in Operational Space with Trapezoidal Velocity Profile**:  
@@ -29,22 +29,23 @@ Image Source:(https://howtorobot.com/expert-insight/industrial-robot-types-and-t
 
 ### Method
 1. Code for trapezoidal velocity profile based 3d-trajectory generation, Second order inverse kinematics and derivations for Euler Lagrange dynamic equation can be found [here](https://github.com/patleman/SCARA_MANIPULATOR-dynamics).
-   As given in the question, there are five waypoints through which the trajectory of the end effector needs to be generated. Considering \(P_e\) as the position vector of the end effector of the robot and \(P_0\), \(P_1\), \(P_2\), \(P_3\), and \(P_4\) as the position vectors of the waypoints, the following expression can be written:
 
-\[
+As given in the question, there are five waypoints through which the trajectory of the end effector needs to be generated. Considering \(P_e\) as the position vector of the end effector of the robot and $$\(P_0\), \(P_1\), \(P_2\), \(P_3\)$$, and $$\(P_4\)$$ as the position vectors of the waypoints, the following expression can be written:
+
+$$
 P_e = P_0 + \sum_{j=1}^{4} \frac{S_j}{\left\| P_j - P_{j-1} \right\|} (P_j - P_{j-1})
-\]
+$$
 where \(j = 1, 2, 3, 4\) refers to the \(j\)-th segment between \(P_j\) and \(P_{j-1}\) points. The variable \(S_j\) is used to provide the timing law to the path defined by the above equation. As per the question, \(S_j\) should be a trapezoidal velocity profile. Also, it is required to have an anticipation time before the start of each new segment. Considering all these required features, \(S_j\) is defined as follows:
 
-\[
+$$
 S_j(t) = 
 \begin{cases} 
 0 & \quad 0 \leq t \leq t_{j-1} - \Delta t_{j} \\
 S_j'( t + \Delta t_{j}) & \quad t_{j-1} - \Delta t_{j} \leq t \leq t_{j} - \Delta t_{j} \\
 d & \quad t_{j} - \Delta t_{j} \leq t \leq t_{f} - \Delta t_{N}
 \end{cases}
-\]
-where \(\Delta t_{j} = \Delta t_{j-1} + \delta t_{j}\) is the advance time at which the \(j\)-th segment starts and \(\delta t_{j}\) is the anticipation time given in the question as 0.2 seconds, with \(\Delta t_{0} = 0\). Also, the trapezoidal profile for \(S_j'\) is defined as follows:
+$$
+where $$\(\Delta t_{j} = \Delta t_{j-1} + \delta t_{j}\)$$ is the advance time at which the $$\(j\)$$-th segment starts and $$\(\delta t_{j}\)$$ is the anticipation time given in the question as 0.2 seconds, with \(\Delta t_{0} = 0\). Also, the trapezoidal profile for \(S_j'\) is defined as follows:
 
 \[
 S_j(t) = 
