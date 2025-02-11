@@ -6,6 +6,7 @@ collection: portfolio
 
 
 [Code](https://github.com/patleman/SCARA_MANIPULATOR-dynamics)
+
 <img src='/images/scara_animation.gif'>
 
 ### Problem Statement:
