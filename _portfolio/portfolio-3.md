@@ -6,9 +6,9 @@ collection: portfolio
 
 
 [Code](https://github.com/patleman/SCARA_MANIPULATOR-dynamics)
+<img src='/images/scara_animation.gif'>
 
 ### Problem Statement:
-<img src='/images/scara_animation.gif'>
 1. **Trajectory Generation in Operational Space with Trapezoidal Velocity Profile**:  
    Generate a trajectory for a robotic arm in its operational space over 4 seconds with a trapezoidal velocity profile. The trajectory should pass through the following waypoints:  
    - **p0 = [0, -0.80, 0]** at **t0 = 0.0**  
