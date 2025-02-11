@@ -95,18 +95,27 @@ Input values for the desired joint positions, velocities, and accelerations are 
 
 ### Result
 3d trajectory generated with trapezoidal velocity profile:
+
 <img src='/images/3d_part1.jpg'>
+
 X component:
+
 <img src='/images/X_trajectory.jpg'>
+
 Y component:
+
 <img src='/images/Y_Trajectory.jpg'>
+
 Z component:
+
 <img src='/images/Z_trajectory.jpg'>
 
 Generated joint trajectories:
+
 <img src='/images/Joint_position_part2.jpg'>
 
 Visualization:
+
 <img src='/images/scara_animation.gif'>
 
   
