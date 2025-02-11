@@ -83,7 +83,7 @@ collection: portfolio
    y = K_d \ddot{\widetilde{q}} + K_p \widetilde{q} + \ddot{q}_d
    $$
    
-   Here, $$K_d$$ and $$K_p$$ are positive definite diagonal matrices to ensure stability. $$\widetilde{q} is the error between the desired and actual    joint values.
+   Here, $$K_d$$ and $$K_p$$ are positive definite diagonal matrices to ensure stability. $$\widetilde{q}$$ is the error between the desired and         actual joint values.
    
    Input values for the desired joint positions, velocities, and accelerations are derived from the Second Order Inverse Kinematic Algorithm.
 
