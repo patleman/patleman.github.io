@@ -4,7 +4,9 @@ excerpt: " This project introduces a hierarchical Control Barrier Function (CBF)
 collection: portfolio
 ---
 ### Problem Statement
-To make business out of drones in a country, a secure infrastructure should be build in which drone's activity is traceble to prevent the misuse of the technology. To address this, Government of India relesed policies ([Document](https://patleman.github.io/files/DGCA_RPAS_Guidance_Manual.pdf)) that listed some must-have software level features that a drone/RPAS should exhibit. 
+In order to establish a secure and reliable business environment for drones in the country, a robust infrastructure must be built to ensure that drone activities are traceable, thereby preventing misuse of the technology. To address this critical need, the Government of India has issued policies and guidelines, which can be found in the [DGCA RPAS Guidance Manual](https://patleman.github.io/files/DGCA_RPAS_Guidance_Manual.pdf). These guidelines outline essential software-level features that a drone or RPAS (Remotely Piloted Aircraft System) must incorporate to ensure safety, security, and compliance.
+
+In alignment with these regulations, the task is to implement the software APIs listed on page 51 of the [aforementioned document](https://patleman.github.io/files/DGCA_RPAS_Guidance_Manual.pdf), ensuring that drones meet the required standards for operation in the Indian airspace. The goal is to develop a system that adheres to these regulatory requirements and guarantees the traceability and security of drone operations for regulatory and safety purposes.
 
 
 
