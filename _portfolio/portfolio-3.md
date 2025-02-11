@@ -5,7 +5,9 @@ collection: portfolio
 ---
 <img src='/images/Scara.jpg'>
 Image Source:https://howtorobot.com/expert-insight/industrial-robot-types-and-their-different-uses
+
 [Code](https://github.com/patleman/SCARA_MANIPULATOR-dynamics)
+
 ### Problem Statement:
 
 1. **Trajectory Generation in Operational Space with Trapezoidal Velocity Profile**:  
@@ -30,7 +32,7 @@ Image Source:https://howtorobot.com/expert-insight/industrial-robot-types-and-th
 ### Method
 1. Code for trapezoidal velocity profile based 3d-trajectory generation, Second order inverse kinematics and derivations for Euler Lagrange dynamic equation can be found [here](https://github.com/patleman/SCARA_MANIPULATOR-dynamics).
 
-As given in the question, there are five waypoints through which the trajectory of the end effector needs to be generated. Considering \(P_e\) as the position vector of the end effector of the robot and $$\(P_0\), \(P_1\), \(P_2\), \(P_3\)$$, and $$\(P_4\)$$ as the position vectors of the waypoints, the following expression can be written:
+There are five waypoints through which the trajectory of the end effector needs to be generated. Considering $$P_e$$ as the position vector of the end effector of the robot and $$P_0, P_1, P_2, P_3 $$, and $$P_4$$ as the position vectors of the waypoints, the following expression can be written:
 
 $$
 P_e = P_0 + \sum_{j=1}^{4} \frac{S_j}{\left\| P_j - P_{j-1} \right\|} (P_j - P_{j-1})
