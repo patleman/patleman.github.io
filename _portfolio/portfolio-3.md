@@ -27,7 +27,7 @@ Image Source:https://howtorobot.com/expert-insight/industrial-robot-types-and-th
 2. Second Order inverse kinematics to generate joint acceleration, velocity and position profile.
 3. Derive Euler Lagrange dynamic equation for the Scara Manipulator.
 4. Inverse Dynamic Controller (torque-control) for SCARA dynamical system.
-5. Implementation using MATLAB
+5. Implementation using MATLAB; [Code](https://github.com/patleman/SCARA_MANIPULATOR-dynamics)
 
 ### Method
 1. Code for trapezoidal velocity profile based 3d-trajectory generation, Second order inverse kinematics and derivations for Euler Lagrange dynamic equation can be found [here](https://github.com/patleman/SCARA_MANIPULATOR-dynamics).There are five waypoints through which the trajectory of the end effector needs to be generated. Considering $$P_e$$ as the position vector of the end effector of the robot and $$P_0, P_1, P_2, P_3 $$, and $$P_4$$ as the position vectors of the waypoints, the following expression can be written:
