@@ -1,7 +1,7 @@
 ---
 title: "Modified Rodriguez Parameters based Non Linear Disturbance Observer
 Control of Quadrotor"
-excerpt: "For aggressive acrobatic maneuvers of quad rotors,
+excerpt: "For aggressive maneuvers of quad rotors,
 it is essential to have quick and precise control. This project
 presents a systematic approach to achieve the same using the
 cascade control approach. <br/> <img src='/images/Quadrotor_MRP.gif'>"
