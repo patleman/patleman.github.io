@@ -1,50 +1,25 @@
 ---
 title: "Trajectory Tracking Controller for SCARA Manipulator(MATLAB)"
-excerpt: " This project introduces a hierarchical Control Barrier Function (CBF)-based control framework designed to proactively ensure the safe operation of an industrial manipulator in close human-robot interaction scenarios.<br/><img src='/images/cbf_diagram1_c1.jpg'>"
+excerpt: "This project discusses the formulation of torque-based control for the SCARA manipulator, along with trapezoidal velocity profile-based trajectory generation.<br/><img src='/images/cbf_diagram1_c1.jpg'>"
 collection: portfolio
 ---
+Image Source:(https://howtorobot.com/expert-insight/industrial-robot-types-and-their-different-uses)
 
+Problem Statement:
+### Problem Statement:
 
-The overview of the developed algorithm is shown in the diagram below: 
-<img src='/images/CBFcontroller (1).png'>
+1. **Trajectory Generation in Operational Space with Trapezoidal Velocity Profile**:  
+   Generate a trajectory for a robotic arm in its operational space over 4 seconds with a trapezoidal velocity profile. The trajectory should pass through the following waypoints:  
+   - **p0 = [0, -0.80, 0]** at **t0 = 0.0**  
+   - **p1 = [0, -0.80, 0.5]** at **t1 = 0.6**  
+   - **p2 = [0.5, -0.6, 0.5]** at **t2 = 2.0**  
+   - **p3 = [0.8, 0.0, 0.5]** at **t3 = 3.4**  
+   - **p4 = [0.8, 0.0, 0.0]** at **t4 = 4.0**  
+   The robot should not stop at any waypoint, with each serving as a via point. The anticipation time between each segment is 0.2 seconds, and the trajectory should be sampled with a time step of **Ts = 0.001 s**. Compute and plot the **position, velocity, and acceleration** profiles of the trajectory for each segment.
 
-The equations used in the algorithm is shown in the diagram below:
-<img src='/images/equation_controller_po.drawio.png'>
+2. **Inverse Dynamic Control Approach with 5 kg Load**:  
+   Using the trajectory generated in the operational space, implement a **second-order inversion kinematic algorithm** to generate the joint setpoints for a robot arm with a 5 kg load placed at the end effector. Develop an inverse dynamic control approach to calculate the required joint torques or forces based on the generated trajectory and joint setpoints. The control strategy should ensure that the robot follows the path accurately while accounting for the load dynamics.
 
-
-
-A simulation was performed for a 2D manipulator to
-highlight the effect of the relaxation variable. The first diagram
-shows the initial configuration of the manipulator and two obstacles.
-The second diagram corresponds to the case where no relaxation
-variable is used. The third figure corresponds to the case where the
-red obstacle is prioritized more than the green obstacle. The fourth
-diagram represents the plot of the relaxation variable value for the
-previous case, capped at 0.6. The fifth diagram corresponds to the
-case where the upper bound on the relaxation variable is kept high.
-
-<img src='/images/highlighting_prioritization (2) (1).png'>
-
-Plots of the relative velocity of the head and hand versus
-their distance from the end-effector, based on data from 40 runs of
-the experiment. A larger gap in the bottom-left corner of the head
-plot, compared to the hand plot, indicates the prioritization of the head over hand. 
-
-<img src='/images/v_vs_d.svg'>
-
-
-
-
-$$
-\begin{aligned}
-&\arg_{\delta_{ha} > 0} \min_{\dot{\boldsymbol{q}}_{safe}}\left\{||\dot{\boldsymbol{q}}_{safe}-\dot{\boldsymbol{q}}_{perf}||^2 + \beta  \delta_{ha}^2 \right\} \\
-&\text { s.t.} \\
-&A_{hej}(2J_{j}(\boldsymbol{x}) \ \dot{\boldsymbol{q}}_{safe}-\dot{\boldsymbol{p}}_{he})\geq - \alpha (h_{hej}(\boldsymbol{x},t)), \\
-&A_{haj}(2J_{j}(\boldsymbol{x}) \ \dot{\boldsymbol{q}}_{safe}-\dot{\boldsymbol{p}}_{ha})\geq - \alpha (h_{haj}(\boldsymbol{x},t))-\delta_{ha}, \\
-&\dot{\boldsymbol{q}}_{min} \leq \dot{\boldsymbol{q}}_{safe} \leq \dot{\boldsymbol{q}}_{max}, \\
-&\quad j = 1, 2, \dots, n
-\end{aligned}
-$$
 
 
 
