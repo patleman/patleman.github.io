@@ -9,13 +9,16 @@ In order to establish a secure and reliable business environment for drones in t
 In alignment with these regulations, the task is to implement the software APIs listed on page 51 of the [aforementioned document](https://patleman.github.io/files/DGCA_RPAS_Guidance_Manual.pdf), ensuring that drones meet the required standards for operation in the Indian airspace. The goal is to develop a system that adheres to these regulatory requirements and guarantees the traceability and security of drone operations for regulatory and safety purposes.
 
 
-
+### Objective
 
 1) Validation of Permission Artefact is tested
 2) Key Generation inside Pixhawk is tested
 3) Return To Launch behavior is activated upon geofence or time beach. (tested in simulation-in-hardware)
 4)Log is generated and signed within the Pixhawk(tested in simulation-in-hardware)
+### Method 
+<img src='/images/chart_npnt.png'>
 
+### Challenges faced
 Problems faced in Software in the Loop:
 1) knowing and implementing the canonicalization and validation of permission artifacts (XML file). XML parser library was not able to be used because of linking issues.
 2) way of canonicalization and signing flight log (JSON file).
