@@ -24,8 +24,8 @@ This project discusses the design of both the inner and outer loop controllers, 
 5. **Augmenting the control law to address the initial upside-down orientation of the quadrotor.**
 6. **Simulating the aforementioned components in MATLAB.**
 
-## Impact of the Solution
-1. A robust global full-degree-of-freedom MRP-based nonlinear control law for the quadrotor’s attitude control is proposed with its stability proof.
+## Highlights
+1. A robust global full degree of freedom, MRP(Modified Rodrigues Parameter) based nonlinear control law for the quadrotor's attitude control is proposed with its stability proof.
 2. A nonlinear disturbance observer is proposed for the quadrotor model.
 3. A new algorithm for handling the upside-down orientation of the quadrotor at the start of the flight is proposed.
 
