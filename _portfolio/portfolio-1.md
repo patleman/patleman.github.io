@@ -12,7 +12,7 @@ Additionally, a **cobot** works alongside the robot, so functionality is require
 <img src='https://github.com/user-attachments/assets/9e04538a-1641-44db-8089-bf51d310f37a' alt='CBF Implementation GIF'>"
 ## Objectives
 
-1. **Set up the manipulator system and ZED2i camera.**
+1. **Set up the manipulator system and ZED2i camera.(with Eye on Base calibration)**
 2. **Implement motion planning** for the following trajectories:
    - a) Pick and place operation
    - b) X-Y circular trajectory
@@ -67,6 +67,7 @@ Video below represents the implementation of the algorithm
   <source src="/images/CBF_implementation.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-
+### Tools 
+In earlier stage, [UR16e](https://www.youtube.com/watch?v=XsO-mHXidSA) manipulator was used with its ROS2 wrapper, later project was switched to Franka Emika Panda Robot.
 
 
