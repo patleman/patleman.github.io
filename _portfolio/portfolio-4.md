@@ -1,6 +1,6 @@
 ---
 title: "Augmenting Public Key Infrastructure(PKI) to PX4 source code and making it NPNT compliant( No Permission No Takeoff)"
-excerpt: " This project focuses on ensuring compliance with the Government of India's regulations for drone operations by implementing software APIs for traceability, security, and operational safety. The goal is to achieve Level 0 Compliance for flight modules using Pixhawk, ensuring secure flight log signing and key management within the PX4 source code.<br/><img src='/images/npnt_2.png'>"
+excerpt: " This project focuses on ensuring compliance with the Government of India's regulations for drone operations by implementing software APIs for traceability, security, and operational safety. The goal is to achieve Level 0 Compliance for flight modules using Pixhawk, ensuring secure flight log signing and key management within the PX4 source code.<br/><img src='/images/QGC.png'>"
 collection: portfolio
 ---
 ### Problem Statement
@@ -43,6 +43,7 @@ Problems faced in Software-in-the-Loop (SITL):
    
 2) **Canonicalization and signing of flight logs (JSON file)**: The approach for canonicalization and signing of flight logs was not straightforward, leading to difficulties in implementation.
 
+
 ---
 
 Problems faced while implementing the code in hardware:
@@ -63,6 +64,9 @@ Problems faced while implementing the code in hardware:
 1. The aforementioned modifications were directly applied to the PX4 source code (Pixhawk), which had previously been implemented on a Raspberry Pi (companion computer). This integration resulted in increased flight time and reduced power consumption for the company's RPAS.
 2. Gaining an understanding of the software architecture was crucial in identifying areas that required amendments to achieve the desired behavior while keeping the main objective in mind. It became clear that reading and understanding the code often takes more time than writing it.
 3. Debugging and Testing
+
+QGC showing time breach message and not allowing to fly:
+<img src='/images/QGC.png'>
 
 ### Tools used
 PX4, PIXHAWK, GPS, MAVSDK, QGroundControl
