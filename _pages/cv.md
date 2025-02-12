@@ -37,7 +37,7 @@ Work experience
 *Sept 2020 - Sept 2021*
 - Improved the security, traceability, and integrity of the company's Remotely Piloted Aircraft Systems (RPAS) by augmenting the open-source software **PX4** with **Public Key Infrastructure (PKI)** to meet Indian regulatory requirements.
 - The aforementioned augmentation was directly applied to the PX4 source code (Pixhawk), which had previously been implemented on a Raspberry Pi (companion computer), thereby **increasing the flight time** and **reducing the power consumption** of the company's RPAS.
-- Developed and documented the company's [**NPNT (No Permission, No Take-off)**](https://github.com/patleman/Px4_firmware/blob/master/NPNT_work.pdf) architecture to ensure compliance with Indian regulations.
+- Developed and documented the company's [**NPNT (No Permission, No Take-off)**](https://patleman.github.io/portfolio/portfolio-4/) architecture to ensure compliance with Indian regulations.
 
 ---
 ### Industrial Automation Lab (MPAE Department, NSIT), R&D Intern | New Delhi, India
