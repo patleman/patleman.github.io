@@ -25,7 +25,7 @@ However, Pixhawk does not have a built-in TEE or secure hardware module to fully
 ### Objective
 
 1. Understand the software architecture of the PX4 source code and identify the modules and methods that need amendments to comply with the standards. (Controller board used: [Pixhawk](https://docs.px4.io/main/en/flight_controller/pixhawk-2.html)).
-2. Select a lightweight cryptographic library to perform big number modular operations required for key pair generation and hash encryption. Further, integrate this library into the PX4 source code base.
+2. Select a lightweight cryptographic library to perform big number modular operations required for key pair generation and hash signing. Further, integrate this library into the PX4 source code base.
 3. Understand how XML and JSON files are signed using keys.
 4. Test the validation of the Permission Artefact.
 5. Test key generation inside Pixhawk.
