@@ -8,20 +8,30 @@ In order to establish a **secure and reliable** business environment for drones 
 
 <img src='/images/npnt_2.png'>
 
-In alignment with these regulations, the task is to implement the **software APIs** listed on page 51 of the [aforementioned document](https://patleman.github.io/files/DGCA_RPAS_Guidance_Manual.pdf), ensuring that drones meet the required standards for operation in the Indian airspace. The goal is to develop a system that adheres to these regulatory requirements and guarantees the traceability and security of drone operations for regulatory and safety purposes.
-The governement guidelines list particularly two levels of compliance: Level 0 Compliance for Flight Module security ensures that signing and encryption are implemented at the software level within the host system, with careful management of private keys to prevent unauthorized access. It requires that private keys are protected from users or external applications, and fraudulent flight logs cannot be easily injected. Level 1 Compliance elevates security by implementing signing and encryption within a Trusted Execution Environment (TEE), ensuring that neither host system processes nor users can access the private key or manipulate flight logs. In Level 1, private key management is fully contained within the TEE. Pixhawk does not have a built-in TEE or similar secure hardware module that can fully isolate private key management and prevent access by host system processes or external applications.
+To comply with government regulations for drone operations in India, the task is to implement the software APIs listed on page 51 of the [aforementioned document](https://patleman.github.io/files/DGCA_RPAS_Guidance_Manual.pdf). This will ensure that drones meet the required standards for security, traceability, and regulatory compliance in Indian airspace.
+
+The guidelines specify two levels of compliance:
+
+### Level 0 Compliance:
+This involves implementing signing and encryption within the host system software. The private keys must be carefully managed to prevent unauthorized access. Fraudulent flight logs should not be easily injected, and the private keys must be protected from both users and external applications.
+
+### Level 1 Compliance:
+This level requires signing and encryption to be handled within a Trusted Execution Environment (TEE). The private key is fully isolated and managed within the TEE, ensuring that neither system processes nor users can access it or manipulate flight logs.
+
+However, Pixhawk does not have a built-in TEE or secure hardware module to fully isolate private key management, which means it cannot fully meet Level 1 Compliance. Therefore, the scope of the project was to achieve **Level 0 Compliance**.
+
 
 
 ### Objective
 
-1. Understand the software architecture of PX4 source code and figure out the modules, methods that needs amendements to be compliant with the 
- standards. (controller board used:[Pixhawk](https://docs.px4.io/main/en/flight_controller/pixhawk-2.html))
-2. Select a lightweight cryptographic library to run big num mod operations used in generation of key-pair and encrypting hashes. Further, integrate this to the Px4 source code base.
-3. know how XML files and JSON files are signed using keys.
-4. Test the Validation of Permission Artefact
-5. Test Key Generation inside Pixhawk 
-6. Return To Launch behavior is activated upon geofence or time beach. (tested in simulation-in-hardware)
-4. Log is generated and signed within the Pixhawk(tested in simulation-in-hardware)
+1. Understand the software architecture of the PX4 source code and identify the modules and methods that need amendments to comply with the standards. (Controller board used: [Pixhawk](https://docs.px4.io/main/en/flight_controller/pixhawk-2.html)).
+2. Select a lightweight cryptographic library to perform big number modular operations required for key pair generation and hash encryption. Further, integrate this library into the PX4 source code base.
+3. Understand how XML and JSON files are signed using keys.
+4. Test the validation of the Permission Artefact.
+5. Test key generation inside Pixhawk.
+6. Activate Return to Launch behavior upon geofence or time breach (test in simulation-in-hardware).
+7. Generate and sign logs within Pixhawk (test in simulation-in-hardware).
+
    
 ### Method 
 <img src='/images/chart_npnt.png'>
@@ -47,7 +57,8 @@ Problems faced while implementing the code in hardware:
 3) **Memory Limitations in SITL vs. Hardware**: 
    The code tested in **Software-in-the-Loop (SITL)** used too much memory, which caused the same code to perform poorly when running on hardware. Both the **stack overflow** issue mentioned in point 1 and the **huge size arrays** defined in the code contributed to this problem. To resolve this, the **code architecture** was redefined for the hardware simulation to achieve the same behavior without overloading the memory.
 
-
+### Tools used
+PX4, PIXHAWK, GPS, MAVSDK, QGroundControl
 
 
 
