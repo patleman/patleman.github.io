@@ -10,7 +10,7 @@ In order to establish a **secure and reliable** business environment for drones 
 
 To comply with government regulations for drone operations in India, the task is to implement the software APIs listed on page 51 of the [aforementioned document](https://patleman.github.io/files/DGCA_RPAS_Guidance_Manual.pdf). This will ensure that drones meet the required standards for security, traceability, and regulatory compliance in Indian airspace.
 
-The guidelines specify two levels of compliance:
+The guidelines specify two levels of compliance([Section 2.2, Page38](https://patleman.github.io/files/DGCA_RPAS_Guidance_Manual.pdf)):
 
 ### Level 0 Compliance:
 This involves implementing signing and encryption within the host system software. The private keys must be carefully managed to prevent unauthorized access. Fraudulent flight logs should not be easily injected, and the private keys must be protected from both users and external applications.
