@@ -1,6 +1,6 @@
 ---
 title: "Augmenting Public Key Infrastructure(PKI) to PX4 source code and making it NPNT compliant( No Permission No Takeoff)"
-excerpt: " This project introduces a hierarchical Control Barrier Function (CBF)-based control framework designed to proactively ensure the safe operation of an industrial manipulator in close human-robot interaction scenarios."
+excerpt: " This project focuses on ensuring compliance with the Government of India's regulations for drone operations by implementing software APIs for traceability, security, and operational safety. The goal is to achieve Level 0 Compliance for flight modules using Pixhawk, ensuring secure flight log signing and key management within the PX4 source code.<br/><img src='/images/npnt_2.png'>"
 collection: portfolio
 ---
 ### Problem Statement
@@ -40,6 +40,7 @@ However, Pixhawk does not have a built-in TEE or secure hardware module to fully
 Problems faced in Software-in-the-Loop (SITL):
 
 1) **Canonicalization and validation of permission artifacts (XML file)**: The XML parser library could not be used due to **linking issues**.
+   
 2) **Canonicalization and signing of flight logs (JSON file)**: The approach for canonicalization and signing of flight logs was not straightforward, leading to difficulties in implementation.
 
 ---
@@ -56,6 +57,12 @@ Problems faced while implementing the code in hardware:
 
 3) **Memory Limitations in SITL vs. Hardware**: 
    The code tested in **Software-in-the-Loop (SITL)** used too much memory, which caused the same code to perform poorly when running on hardware. Both the **stack overflow** issue mentioned in point 1 and the **huge size arrays** defined in the code contributed to this problem. To resolve this, the **code architecture** was redefined for the hardware simulation to achieve the same behavior without overloading the memory.
+
+### Learnings
+
+1. The aforementioned modifications were directly applied to the PX4 source code (Pixhawk), which had previously been implemented on a Raspberry Pi (companion computer). This integration resulted in increased flight time and reduced power consumption for the company's RPAS.
+2. Gaining an understanding of the software architecture was crucial in identifying areas that required amendments to achieve the desired behavior while keeping the main objective in mind. It became clear that reading and understanding the code often takes more time than writing it.
+3. Debugging and Testing
 
 ### Tools used
 PX4, PIXHAWK, GPS, MAVSDK, QGroundControl
