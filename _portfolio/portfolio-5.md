@@ -10,7 +10,7 @@ Given an onboard downward-facing camera, a mat of AprilTags, and an IMU (Inertia
 
 1. **AprilTag Detection and Position Calculation**  
    - Detect AprilTags within the camera’s downward-facing view.
-   - Calculate the position of each tag in the world coordinate system.
+   - associate the detected Tag with the position in the world coordinate system.
 
 2. **Pose Estimation (Position and Orientation)**  
    - Estimate the drone’s pose (position and orientation) using the homography matrix.
