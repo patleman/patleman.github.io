@@ -4,6 +4,7 @@ excerpt: " This project demonstrates the fusion of sensor data from an IMU and a
 collection: portfolio
 ---
 <img src='/images/jg.gif'>
+
 ### Problem Statement
 Given an onboard downward-facing camera, a mat of AprilTags, and an IMU (Inertial Measurement Unit), the task is to compute the pose and velocity of the drone.
 
