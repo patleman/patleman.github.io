@@ -3,7 +3,7 @@ title: "Pose and Velocity Estimation of a Drone Using Onboard Downfacing Camera 
 excerpt: " This project demonstrates the fusion of sensor data from an IMU and a camera to estimate the pose and linear velocity of a drone. This is achieved by leveraging principles of computer vision and state estimation, including homography matrix estimation, FAST feature detection, KLT tracking for optical flow, RANSAC for outlier rejection, and the Unscented Kalman Filter.<br/> <img src='/images/jg.gif'>"
 collection: portfolio
 ---
-<img src='/images/jg.gif'>
+<img src='/images/final_dp.gif'>
 
 ### Problem Statement
 Given an onboard downward-facing camera, a mat of AprilTags, and an IMU (Inertial Measurement Unit), the task is to compute the pose and velocity of the drone.
