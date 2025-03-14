@@ -6,7 +6,7 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-[Download CV](https://patleman.github.io/files/Patanjali_Maithani_M.pdf)
+[Download CV](https://patleman.github.io/files/Patanjali_Maithani_PM.pdf)
 {% include base_path %}
 
 Education
