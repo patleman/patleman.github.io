@@ -6,6 +6,7 @@ collection: portfolio
 
 ## Problem Statement
 [Archive link for paper format](https://arxiv.org/abs/2505.16055)
+
 In a human-robot collaborative environment, safety is a critical concern, alongside the performance of the robotic system. This project proposes a solution to address this challenge using the **Control Barrier Function (CBF)** theory as a mathematical tool and a **Depth Stereo ZED2i Camera** as the sensory input.
 
 Additionally, a **cobot** works alongside the robot, so functionality is required to ensure that the robot avoids sensitive human body parts but is allowed to make contact with engaging parts, such as the hands. However, there is a possibility that an engaging body part might approach the manipulator at high velocity. In such scenarios, it is crucial for the algorithm to detect this and ensure collision avoidance.
